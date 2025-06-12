@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
     <title>Quick List</title>
 </head>
 <body>
@@ -27,11 +28,12 @@
             Voltar
         </button>
         <h1>Compras da semana</h1>
+    </header>
 
         <main>
             <section class="add-item">
                 <input type="text" placeholder="Adicione um novo item" id="item">
-                <button>Adicionar item</button>
+                <button onclick="addItem()">Adicionar item</button>
             </section>
             <section class="list">
                 <div class="item">
@@ -54,7 +56,7 @@
                         <div class="custom-checkbox">
                             <img src="./checked.svg" alt="checked">
                         </div>
-                        <label for="item-1">Maça</label>
+                        <label for="item-1">Melancia</label>
                     </div>
 
                     <button>
@@ -68,7 +70,7 @@
                         <div class="custom-checkbox">
                             <img src="./checked.svg" alt="checked">
                         </div>
-                        <label for="item-1">Maça</label>
+                        <label for="item-1">Melão</label>
                     </div>
 
                     <button>
@@ -87,6 +89,6 @@
                 </button>
             </div>
         </main>
-    </header>
+    
 </body>
 </html>
