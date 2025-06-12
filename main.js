@@ -37,7 +37,7 @@ function showItemsList() {
     })
 }
 
-function removeItem(itemName) { // Corrigido o nome (1 'e' apenas)
+function removeItem(itemName) {
     const itemIndex = items.findIndex(item => item.name === itemName)
     const divWarning = document.querySelector(".warning")
 
@@ -48,8 +48,12 @@ function removeItem(itemName) { // Corrigido o nome (1 'e' apenas)
     }, 4000);
 
     if (itemIndex !== -1) {
-        items.splice(itemIndex, 1) // Corrigido para 'items'
+        items.splice(itemIndex, 1) 
     }
 
     showItemsList()
+}
+
+function addHideWarningClass() {
+    document.querySelector(".warning").classList.add("hide-warning")
 }
