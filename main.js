@@ -3,7 +3,10 @@ const items = []
 function addItem() {
     const itemName = document.querySelector("#item").value
     
-    if (!itemName.trim()) return // Impede itens vazios
+    if (itemName === "") {
+        alert("Digite um item valido!")
+        return
+    }
 
     const newItem = {
         name: itemName,
