@@ -37,17 +37,11 @@ header {
     align-items: start;
 
 
-    
-    header > img {
-    width: auto;
-    height: 4rem;
-    
-}
-
-
-    header .other-img {
-    width: 2rem;
-}
+    img {
+        
+        margin-inline: auto;
+        margin-bottom: 3rem;
+    }
 
     button {
         border: none;
