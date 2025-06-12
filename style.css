@@ -199,3 +199,9 @@ main {
         color: var(--always-white);
     }
 }
+
+.hide-waring {
+    opacity: 0;
+    transform: translateY(-18px);
+    
+}
